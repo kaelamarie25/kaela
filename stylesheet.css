@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	background-color: #ffffff;
+}
+
+.container{
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 0px;
+}
+
+#logonav {
+	border: none;
+	margin: 0 auto;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	padding: 20px 0px 20px 0px;
+	width: 100%;
+	z-index: 99999;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+#logo-itself{
+	margin: 0 auto;
+	border: none;
+	max-width: 165px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.logofro {
+	width: 100%;
+	max-width: 80px;
+	margin: 0 auto;
+	align: center;
+	display: block;
+}
+
+.logotxt {
+	margin: 0 auto; 
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: 900i;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 0.5px;
+	display: block;
+}
+
+#nav {
+	margin: 0 auto;
+	border: none;
+	max-width: 300px;
+	display: block;
+}
+
+.nav, .nav li {
+	list-style-type: none;
+	display: inline-block;
+	word-spacing: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 auto;
+	text-transform: uppercase;
+	color: #1cb6c9;
+	padding: 0px;
+	letter-spacing: 0.5px;
+}
+
+.nav a:link {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1cb6c9;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+.nav a:visited {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1cb6c9;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+.nav a:hover {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #363838;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+	border-bottom: solid 2px #363838;
+}
+
+.nav a:active {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #363838;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+a:link {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: none;
+	color: #1cb6c9;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+a:visited {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: none;
+	color: #1cb6c9;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+a:hover {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: none;
+	color: #363838;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+	border-bottom: solid 2px #363838;
+}
+
+a:active {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: none;
+	color: #363838;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+
+.content {
+	margin: 0 auto;
+	border: none;
+	width: 100%;
+	height: 100%;
+	margin-top: 15%;
+}
+
+.work-container {
+	margin: 0 auto;
+	padding: 0px;
+	border: none;
+	margin-bottom: 100px;
+}
+
+.work-content {
+	border: none;
+	max-height: 300px;
+	max-width: 450px;
+	display: inline-block;
+	/*height: 300px; width: 450px;*/
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	margin-bottom: 4px;
+}
+
+.work-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1cb6c9;
+}
+
+.work-content:hover .overlay {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.overlay-text {
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-title {
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	margin: 0px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/*CONTACT FORM START*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 0px;
+    border-bottom: solid 2px #363838;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Lato', sans-serif;
+    font-size: inherit;
+	color: #1cb6c9;
+	font-weight: inherit;
+	text-align: left;
+}
+input::-webkit-input-placeholder {
+color: #1cb6c9 !important;
+}
+input:-moz-placeholder { /* Firefox 18- */
+color: #1cb6c9 !important;  
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #1cb6c9 !important;  
+}
+input:-ms-input-placeholder {  
+color: #1cb6c9 !important;  
+}
+textarea::-webkit-input-placeholder {
+color: #1cb6c9 !important;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+color: #1cb6c9 !important;  
+}
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #1cb6c9 !important;  
+}
+textarea:-ms-input-placeholder {  
+color: #1cb6c9 !important;  
+}
+input[type=submit] {
+    background-color: #363838;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-box-shadow: -5px 5px 0px 0px #1cb6c9;
+	-moz-box-shadow: -5px 5px 0px 0px #1cb6c9;
+	box-shadow: -5px 5px 0px 0px #1cb6c9;
+	align: center;
+	margin: 0 auto;
+	border: none;
+	padding: 10px 20px;
+}
+input[type=submit]:hover {
+    background-color: #1cb6c9;
+	color: #ffffff;
+	-webkit-box-shadow: -5px 5px 0px 0px #363838;
+	-moz-box-shadow: -5px 5px 0px 0px #363838;
+	box-shadow: -5px 5px 0px 0px #363838;
+	border: none;
+}
+#contact-form-container {
+    background-color: transparent;
+    padding: 20px;
+    max-width: 600px;
+    align: center;
+    margin: 0 auto;
+}
+/*CONTACT FORM END*/
+
+
+/*STYLES FOR WORK DETAIL PAGE START*/
+.work-detail-container {
+	margin: 0 auto;
+	padding: 30px 30px 0px 30px;
+	border: none;
+	text-align: center;
+}
+
+.work-detail-img {
+	display: inline-block;
+	border: none;
+	vertical-align: top;
+	max-height: 90vh;
+	max-width: 600px;
+	overflow-y: scroll;
+	margin: 0 auto;
+}
+
+.work-detail-txt {
+	display: inline-block;
+	border: none;
+	max-height: 100%;
+	max-width: 600px;
+	width: 600px;
+	padding-left: 50px;
+	padding-top: 15vh;
+	vertical-align: top;
+	margin: 0 auto;
+}
+
+.btn {
+	background-color: #363838;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400 !important;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #ffffff !important;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-box-shadow: -5px 5px 0px 0px #1cb6c9;
+	-moz-box-shadow: -5px 5px 0px 0px #1cb6c9;
+	box-shadow: -5px 5px 0px 0px #1cb6c9;
+	padding: 10px 25px;
+}
+
+.btn:hover {
+	background-color: #1cb6c9;
+	color: #ffffff;
+	-webkit-box-shadow: -5px 5px 0px 0px #363838;
+	-moz-box-shadow: -5px 5px 0px 0px #363838;
+	box-shadow: -5px 5px 0px 0px #363838;
+}
+/*STYLES FOR WORK DETAIL PAGE END*/
+
+
+/*COMPARISON SLIDER START */
+
+/***** image comparison slider source code courtesy of Lea Verou: http://lea.verou.me/2014/07/image-comparison-slider-with-pure-css/ *****/
+
+/* Container for slider and images */
+.image-slider {
+	position:relative;
+	display: inline-block;
+	line-height: 0;
+	width: 100%;
+}
+
+/* Styles for the actual toggle */
+.image-slider > div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 25px;
+	max-width: 100%;
+	overflow: hidden;
+	resize: horizontal;
+}
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+	content: '';
+	position: absolute;
+	right: 0; bottom: 0;
+	width: 13px; height: 13px;
+	padding: 5px;
+	background: #1cb6c9;
+	background-clip: content-box;
+	cursor: ew-resize;
+	-webkit-filter: drop-shadow(0 0 2px black);
+	filter: drop-shadow(0 0 2px black);
+}
+
+/* Styles for images in slider */
+.image-slider img {
+	user-select: none;
+	max-width: 600px;
+}
+
+/*COMPARISON SLIDER END*/
+
+
+.footer {
+	margin: 0 auto;
+	background-color: transparent;
+	position: relative;
+	bottom: 0;
+	border: none;
+	padding: 20px 20px 20px 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #cdcdcd;
+	font-weight: 200;
+	text-align: left;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 35px;
+	text-align: left;
+	font-weight: 900;
+	color: #363838;
+	margin: 0px;
+	line-height: 150%;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	text-align: left;
+	font-weight: 900;
+	color: #1cb6c9;
+	margin: 0px;
+	line-height: 150%;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 900;
+	color: #363838;
+	text-transform: uppercase;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	letter-spacing: 0.5px;
+	max-width: 1359px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	text-align: left;
+	color: #363838;
+	line-height: 180%;
+	font-weight: 400;
+	margin: 0 px;
+}
+
+
+/*MOBILE*/
+@media only screen and (min-device-width: 300px) and (max-width: 640px) {
+
+	.logonav {padding: 40px 0px 40px 0px;}
+	.logo-itself, .logo-navigation {margin: 0 auto; display: block;}
+	.content {margin-top: 50%;}
+	.work-detail-img {overflow: hidden;}
+	.work-detail-txt {padding: 50px 0px 0px 0px; width: 100%;}
+	h3 {text-align: center;}
+	.footer {position: relative; bottom: 0;}
+ }
+
+

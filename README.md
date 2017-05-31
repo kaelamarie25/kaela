@@ -1,2 +1,0 @@
-# kaela
-Kaela's repository

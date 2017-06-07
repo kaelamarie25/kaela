@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KBdesigns</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900,900i" rel="stylesheet">
+<link href="../stylesheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="content" style="margin-top: 0px;">
+<div class="work-detail-container">
+
+<div class="work-detail-img">
+    <img src="http://res.cloudinary.com/kaela/image/upload/v1496849176/Avatars-first4_qxhie9.jpg" alt="Avatars - 1/2" title="Avatars - 1/2" width="100%" style="max-width: 600px; margin-bottom: 30px;">
+    
+    <img src="http://res.cloudinary.com/kaela/image/upload/v1496849176/Avatars-last4_ythy2k.jpg" alt="Avatars - 2/2" title="Avatars - 2/2" width="100%" style="max-width: 600px; margin-bottom: 30px;">
+    
+</div><!--close work detail img-->
+
+<div class="work-detail-txt">
+<h1>Avatars</h1>
+<h2>product</h2>
+<p>As part of my work on the <a href="http://www.kaelabryan.com/web-redesign.html">consumer website redesign project</a>, we thought of including an avatar option in a user's profile to increase engagement. So I was charged with conceptualizing and designing 8 avatars, and I decided to give them themes based on certain holidays or seasons. This is one of my favorite recurring projects. It's always fun when I have creative freedom, but it's also fun to think of new solutions while working within a set framework. I wanted each new themed avatar to be similar enough to the original for consistency, so it was interesting to think of other styles and themes that can fit, for instance, the original cat avatar's shape.</p>
+
+<br clear="all">
+<p><a class="btn" href="../index.html">Back To All Work</a></p>
+
+</div><!--close work detail txt-->
+
+</div><!--close work-detail-container-->
+</div><!--close content-->
+
+
+<div class="footer">
+&copy; 2017 Kaela Bryan of KB Designs.
+</div>
+
+
+</div><!--close container-->
+
+</body>
+</html>

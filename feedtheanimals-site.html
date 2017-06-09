@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+	opacity = 0.0;
+}
+</script>
+
+
+<script>
+	var dragitem = undefined;
+	
+function setdragitem(item,evt) {
+	dragitem=item;
+	// alert('item: '+item);
+	//item is an HTML DIV element
+	//evt is an event
+	
+	//if the item should not be draggable, enable this next line
+	//evt.preventDefault();
+	
+	return true;
+}
+function cleardragitem() {
+	dragitem=undefined;
+	//alert('item:'+item);
+}
+function dodrag() {
+	//alert('item:'+dragitem); 
+}
+//This is required -- used to tell WebKit that the drag should be allowed.
+
+function handledragenter(elt, evt) {
+	evt.preventDefault();
+	return true;
+}
+function handledragover(elt, evt) {
+	evt.preventDefault();
+	return true;
+}
+function handledragleave(elt, evt) {
+	
+}
+function handledrop(elt, evt) {
+	//alert('drop');
+	dragitem.style.display="none";
+	var newid=dragitem.id + '_dest';
+	var dest = document.getElementByld(newid);
+		dest.innerHTML = dragitem.innerHTML;
+}
+</script>
+
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="x-icon" href="spooncursor.ico"/>
+<title>Feed The Animals!</title>
+
+<style type="text/css">
+body {
+	margin: 0;
+	cursor: url(spooncursor.png), auto;
+}
+#container {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	width: 9400px;
+}
+#clouds {
+	background-image: url('http://res.cloudinary.com/kaela/image/upload/v1497050344/clouds_ukqem1.png');
+	height: 308px;
+	width: 400px;
+	background-repeat: no-repeat;
+	position: absolute;
+	opacity:0.9;
+	filter: alpha(opacity=90);
+}
+#cloudsdistance {
+	background-image: url('http://res.cloudinary.com/kaela/image/upload/v1497050344/cloudsbg_wryeky.png');
+	height: 91px;
+	width: 150px;
+	position: absolute;
+	left: 800px;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	background-repeat: no-repeat;
+}
+#blue {
+	height: 30vh;
+	padding-top: 220px;
+	padding-right: 500px;
+	padding-left: 500px;
+	z-index: -1;
+	/*background-color: #bedcf3;*/
+	background: linear-gradient(left, #bedcf3, #2d4272); 
+	background: -webkit-linear-gradient(left, #bedcf3, #2d4272); 
+	background: -moz-linear-gradient(left, #bedcf3, #2d4272); 
+	background: -o-linear-gradient(left, #bedcf3, #2d4272); 
+}
+#green {
+	/*background-color: #8fbfa8;*/
+	background: linear-gradient(left, #8fbfa8, #336f2b);
+	background: -webkit-linear-gradient(left, #8fbfa8, #336f2b);
+	background: -o-linear-gradient(left, #8fbfa8, #336f2b);
+	background: -moz-linear-gradient(left, #8fbfa8, #336f2b);
+	
+	height: 40vh;
+	
+	padding-top: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	color: #fff;
+	font-family: verdana;
+	font-size: 15px;
+}
+#intro {
+	height: 220px;
+	font-family: verdana;
+	font-size: 50px;
+	color: #FFF;
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 400px;
+}
+#introgreen {
+	font-size: 18px; 
+	color: #000; 
+	font-family: century gothic;
+	
+	position: absolute;
+	float: left;
+	top: 550px;
+	left: 550px;
+	
+	height: 200px;
+	width: 300px;
+}
+#bunny {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050346/rabbit1_ny7xrd.png') center no-repeat;
+	
+	height: 101px;
+	width: 250px;
+	float: left;
+	
+	position: absolute;
+	left: 2100px;
+	top: 400px;
+	
+	-webkit-user-drop: element;
+}
+#bunny:hover {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050346/rabbiteat1_upwoeb.png') center no-repeat;
+	height: 101px;
+	width: 250px;
+	top: 400px;
+	
+	-webkit-user-drop: element;
+}
+#bunnygreen {
+	position: absolute;
+	left: 2150px;
+	top: 550px;
+	float: left;
+	
+	-webkit-user-drag: element;
+	-webkit-user-select: none;
+}
+#puppy {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050345/puppy_jojime.png') center no-repeat;
+	height: 200px;
+	width: 497px;
+	float: left;
+	position: absolute;
+	left: 4000px;
+	top: 400px;
+	
+	-webkit-user-drop: element;
+}
+#puppy:hover {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050345/puppyeat_hzf3vt.png') center no-repeat;
+	float: left;
+	height: 200px;
+	width: 497px;
+	top: 400px;
+	
+	-webkit-user-drop: element;
+}
+#puppygreen {
+	position: absolute;
+	left: 4070px;
+	float: left;
+	top: 650px;
+	
+	-webkit-user-drag: element;
+	-webkit-user-select: none;
+}
+#deer {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050345/deer_cehzpi.png') center no-repeat;
+	height: 497px;
+	width: 471px;
+	float: left;
+	position: absolute;
+	left: 6750px;
+	top: 60px;
+	
+	-webkit-user-drop: element;
+}
+#deer:hover {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050346/deer1_cio0wc.png') center no-repeat;
+	float: left;
+	height: 497px;
+	width: 471px;
+	top: 62px;
+	
+	-webkit-user-drop: element;
+}
+#deergreen {
+	position: absolute;
+	left: 6800px;
+	top: 610px;
+	
+	float: left;
+	height: 70px;
+	width: 350px;
+	
+	-webkit-user-drag: element;
+	-webkit-user-select: none;
+}
+#happyanimals {
+	position: absolute;
+	left: 8300px;
+	top: 50px;
+	
+	float: left;
+	height: 523px;
+	width: 950px;
+	background: url('http://res.cloudinary.com/kaela/image/upload/v1497050345/happyanimals_sleep_kflnxc.png') center no-repeat;
+}
+#happyanimals:hover {
+	background: transparent url('http://res.cloudinary.com/kaela/image/upload/v1497050345/happyanimals_sleepwink_uy1gsk.png') center no-repeat;
+	float: left;
+	
+	height: 523px;
+	width: 950px;
+}
+#happyanimalstext {
+	position: absolute;
+	float: left;
+	left: 8900px;
+	top: 150px;
+	height: 100px;
+	width: 100px;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="container">
+	<div id="clouds"></div>
+<!---BLUE OPEN--->
+<div id="blue">
+
+<div id="cloudsdistance"></div>
+<!--INTRO-->
+<div id="intro">
+<br>
+<br>
+welcome to<br>
+feed the animals<br><br>
+</div>
+<!--END INTRO-->
+
+
+<!---BLUE BUNNY BUNNY--->
+<div id="bunny" ondragenter="handledragenter(this, event);" ondragover="handledragover(this, event);" ondragleave="handledragleave(this, event);" ondrop="handledrop(this, event);"></div>
+
+
+<!---BLUE DOG--->
+<div id="puppy" ondragenter="handledragenter(this, event);" ondragover="handledragover(this, event);" ondragleave="handledragleave(this, event);" ondrop="handledrop(this, event);"></div>
+
+
+<!---BLUE DEER--->
+<div id="deer" ondragenter="handledragenter(this, event);" ondragover="handledragover(this, event);" ondragleave="handledragleave(this, event);" ondrop="handledrop(this, event);"></div>
+
+
+</div><!--END BLUE-->
+
+
+
+<!--OPEN GREEN-->
+<div id="green">
+
+<div id="introgreen">
+please scroll horizontally<br><br>
+< ><br><br>
+and don't forget to<br>
+feed the animals as you go!
+</div>
+
+<center>
+<!-----START BUNNY CONTENT----->
+<div id="bunnygreen">
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050344/carrot_lncucv.png" alt="Carrot - feed the bunny!" title="Carrot - feed the bunny!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'>
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050344/carrot_lncucv.png" alt="Carrot - feed the bunny!" title="Carrot - feed the bunny!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'>
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050344/carrot_lncucv.png" alt="Carrot - feed the bunny!" title="Carrot - feed the bunny!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'>
+</div>
+<!-----END BUNNY CONTENT----->
+
+
+<!---PUPPY CONTENT--->
+<div id="puppygreen">
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050346/puppyfood_a3z06k.png" alt="Puppy food - feed the dog!" title="Puppy food - feed the dog!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'> &nbsp;&nbsp;&nbsp;
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050346/puppyfood_a3z06k.png" alt="Puppy food - feed the dog!" title="Puppy food - feed the dog!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'> &nbsp;&nbsp;&nbsp;
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050346/puppyfood_a3z06k.png" alt="Puppy food - feed the dog!" title="Puppy food - feed the dog!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'>
+</div>
+<!---END PUPPY CONTENT--->
+
+
+<!---DEER CONTENT--->
+<div id="deergreen">
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050344/corn_dp6k3x.png" alt="Corn - feed the deer!" title="Corn - feed the deer!" id="this" ondragstart="setdragitem(this, event);" ondrag="dodrag();" ondragend="cleardragitem();">
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050344/corn_dp6k3x.png" alt="Corn - feed the deer!" title="Corn - feed the deer!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'>
+
+<img src="http://res.cloudinary.com/kaela/image/upload/v1497050344/corn_dp6k3x.png" alt="Corn - feed the deer!" title="Corn - feed the deer!" id='this' ondragstart='setdragitem(this, event);' ondrag='dodrag();' ondragend='cleardragitem();'>
+</div>
+<!--END DEER CONTENT-->
+
+
+<div id="happyanimals"></div>
+<div id="happyanimalstext">Thanks for feeding us!</div>
+</center>
+</div><!--CLOSE GREEN-->
+</div><!--CLOSE CONTAINER-->
+</center>
+</body>
+</html>

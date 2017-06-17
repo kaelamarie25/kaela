@@ -328,23 +328,28 @@ input[type=submit]:hover {
 /*STYLES FOR WORK DETAIL PAGE START*/
 .work-detail-container {
 	margin: 0 auto;
-	padding: 30px 30px 0px 30px;
+	height: 100%;
+	width: 100%;
 	border: none;
-	text-align: center;
 }
 
 .work-detail-img {
-	display: inline-block;
+	/*display: inline-block;
 	border: none;
 	vertical-align: top;
 	max-height: 90vh;
 	max-width: 600px;
 	overflow-y: scroll;
-	margin: 0 auto;
+	margin: 0 auto;*/
+	
+	display: inline-block;
+	border: none;
+	width: 50%;
+	float: left;
 }
 
 .work-detail-txt {
-	display: inline-block;
+	/*display: inline-block;
 	border: none;
 	max-height: 100%;
 	max-width: 600px;
@@ -352,7 +357,13 @@ input[type=submit]:hover {
 	padding-left: 50px;
 	padding-top: 15vh;
 	vertical-align: top;
-	margin: 0 auto;
+	margin: 0 auto;*/
+	
+	display: inline-block;
+	border: none;
+	width: 45%;
+	float: right; position: fixed;
+	padding: 100px 30px 200px 50px;
 }
 
 .btn {
@@ -397,7 +408,7 @@ input[type=submit]:hover {
 .image-slider > div {
 	position: absolute;
 	top: 0; bottom: 0; left: 0;
-	width: 25px;
+	width: 50px;
 	max-width: 100%;
 	overflow: hidden;
 	resize: horizontal;

@@ -348,6 +348,12 @@ input[type=submit]:hover {
 	float: left;
 }
 
+.work-detail-img, img {
+	align: center;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .work-detail-txt {
 	/*display: inline-block;
 	border: none;
@@ -449,6 +455,7 @@ input[type=submit]:hover {
 	color: #cdcdcd;
 	font-weight: 200;
 	text-align: left;*/
+	display: none;
 }
 
 h1 {

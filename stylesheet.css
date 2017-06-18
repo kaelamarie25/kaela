@@ -416,11 +416,16 @@ input[type=submit]:hover {
 .image-slider > div {
 	position: absolute;
 	top: 0; bottom: 0; left: 0;
-	width: 25px;
+	/*width: 25px;*/
+	width: 50%;
 	max-width: 100%;
 	overflow: hidden;
 	resize: horizontal;
 }
+.image-slider > div:active {
+  width:25px;
+}
+
 /* Cross-browser resizer styling */
 .image-slider > div:before {
 	content: '';

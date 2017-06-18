@@ -425,7 +425,7 @@ input[type=submit]:hover {
 .image-slider > div:before {
 	content: '';
 	position: absolute;
-	right: 0; top: 0;
+	right: 0; bottom: 0;
 	width: 13px; height: 13px;
 	padding: 5px;
 	background: linear-gradient(-45deg, white 50%, transparent 0);

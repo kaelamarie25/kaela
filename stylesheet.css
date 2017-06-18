@@ -423,11 +423,29 @@ input[type=submit]:hover {
 	resize: horizontal;
 }
 .image-slider > div:active {
-  width:25px;
+  width: 50px;
 }
 
 /* Cross-browser resizer styling */
 .image-slider > div:before {
+	content: '';
+	display: inline-block;
+	width: 20px; 
+	height: 20px;
+	overflow: ;
+	position: absolute;
+	resize: horizontal;
+	right: 3px; bottom: 5px;
+  	border-radius: 360px;
+ 	-webkit-border-radius: 360px;
+ 	-moz-border-radius: 360px;
+  
+ 	background-clip: content-box;
+	background: #1cb6c9;
+	-webkit-filter: drop-shadow(0 0 1px #000);
+	filter: drop-shadow(0 0 1px #000);
+	
+	/*ORIGINAL STYLE
 	content: '';
 	position: absolute;
 	right: 0; bottom: 0;
@@ -437,7 +455,7 @@ input[type=submit]:hover {
 	background-clip: content-box;
 	cursor: ew-resize;
 	-webkit-filter: drop-shadow(0 0 2px black);
-	filter: drop-shadow(0 0 2px black);
+	filter: drop-shadow(0 0 2px black);*/
 }
 
 /* Styles for images in slider */

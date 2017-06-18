@@ -369,6 +369,7 @@ input[type=submit]:hover {
 	display: inline-block;
 	border: none;
 	width: 45%;
+	max-width: 700px;
 	float: right; position: fixed;
 	padding: 100px 100px 200px 50px;
 }

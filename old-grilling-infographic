@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KBdesigns</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900,900i" rel="stylesheet">
+<link href="../stylesheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="content" style="margin-top: 0px;">
+<div class="work-detail-container">
+
+<div class="work-detail-img">
+    <img src="http://res.cloudinary.com/kaela/image/upload/v1496153154/NewNewGrillSafety_p4ncgk.jpg" title="Grill Safety Infographic - Original Design From 2015" alt="Grill Safety Infographic - Original Design From 2015" width="100%" style="max-width: ;">
+</div><!--close work detail img-->
+
+<div class="work-detail-txt">
+<h1>Grilling Safety</h1>
+<h2>infographic</h2>
+<p>This is the original grilling infographic I made in 2015, designed for one of the first projects I was assigned at NutriSavings (the company for which I <a href="http://res.cloudinary.com/kaela/image/upload/v1496364012/KaelaBryan-Resume-Website-060117_i8aqya.pdf" target="_blank">currently work</a>). I recently revamped this infographic, which you can <a href="grilling-infographic">get back to here.</a><br><br>
+
+Collecting imagery for this, as I thought about layout, was enjoyable. And, similar to when I designed the <a href="milk-infographic.html">lactose intolerance infographic</a>, I really enjoyed designing the little fire and warning symbol icons. It's about the small things!</p>
+
+<br clear="all">
+<p><a class="btn" href="../index.html">Back To All Work</a></p>
+
+</div><!--close work detail txt-->
+
+</div><!--close work-detail-container-->
+</div><!--close content-->
+
+
+<div class="footer">
+&copy; 2017 Kaela Bryan of KB Designs.
+</div>
+
+
+</div><!--close container-->
+
+</body>
+</html>

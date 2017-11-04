@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KBdesigns</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900,900i" rel="stylesheet">
+<link href="../stylesheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="content" style="margin-top: 0px;">
+<div class="work-detail-container">
+
+<div class="work-detail-img">
+    <img src="http://res.cloudinary.com/kaela/image/upload/v1509806192/salutetoservice_mdobx7.jpg" title="Salute To Service" alt="Salute To Service" width="100%" style="max-width: ;">
+		<img src="http://res.cloudinary.com/kaela/image/upload/v1509806218/300x600_fk4o18.jpg" title="Salute To Service: Display Ad" alt="Salute To Service: Display Ad" width="100%" style="max-width: ;">
+</div><!--close work detail img-->
+
+<div class="work-detail-txt">
+<h1>Salute To Service</h1>
+<h2>promotion</h2>
+<p>At Spartan Race we wanted to do a small Veteran's Day-inspired promotion that offers veterans and people in the military a 25% discount on a race. I found a stock image of the flag with the two dog tags, and photographed the 'Kids' and 'Honor Series' medals myself. Manipulated them and the vector logos of the 'Hurricane Heats' in the dog tags in Photoshop to create the image.</p>
+
+<br clear="all">
+<p><a class="btn" href="../index.html">Back To All Work</a></p>
+
+</div><!--close work detail txt-->
+
+</div><!--close work-detail-container-->
+</div><!--close content-->
+
+
+<div class="footer">
+&copy; 2017 Kaela Bryan of KB Designs.
+</div>
+
+
+</div><!--close container-->
+
+</body>
+</html>
